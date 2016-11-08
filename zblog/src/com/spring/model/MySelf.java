@@ -12,9 +12,9 @@ public class MySelf {
 	
 	private Date birth;
 	
-	private int businessphone;
+	private String businessphone;
 	
-	private int lifephone;
+	private String lifephone;
 	
 	private String address;
 	
@@ -60,22 +60,6 @@ public class MySelf {
 
 	public void setBirth(Date birth) {
 		this.birth = birth;
-	}
-
-	public int getBusinessphone() {
-		return businessphone;
-	}
-
-	public void setBusinessphone(int businessphone) {
-		this.businessphone = businessphone;
-	}
-
-	public int getLifephone() {
-		return lifephone;
-	}
-
-	public void setLifephone(int lifephone) {
-		this.lifephone = lifephone;
 	}
 
 	public String getAddress() {
@@ -134,6 +118,22 @@ public class MySelf {
 		this.portfolioid = portfolioid;
 	}
 
+	public String getBusinessphone() {
+		return businessphone;
+	}
+
+	public void setBusinessphone(String businessphone) {
+		this.businessphone = businessphone;
+	}
+
+	public String getLifephone() {
+		return lifephone;
+	}
+
+	public void setLifephone(String lifephone) {
+		this.lifephone = lifephone;
+	}
+
 	@Override
 	public String toString() {
 		return "MySelf [myid=" + myid + ", UserName=" + UserName + ", age=" + age + ", birth=" + birth
@@ -141,6 +141,8 @@ public class MySelf {
 				+ school + ", course=" + course + ", aboutme=" + aboutme + ", skillid=" + skillid + ", projectid="
 				+ projectid + ", portfolioid=" + portfolioid + "]";
 	}
+
+
 	
 	
 }

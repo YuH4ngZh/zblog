@@ -17,6 +17,10 @@
     <bean id="studentDaoImp"  
         class="com.spring.test.StudentDaoImp">  
         <property name="datasource" ref="datasource" />  
+    </bean> 
+    <bean id="MySelfDaoImp"  
+        class="com.spring.daoimp.MySelfDaoImp">  
+        <property name="datasource" ref="datasource" />  
     </bean>         
 
 </beans>
