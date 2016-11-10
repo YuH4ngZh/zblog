@@ -25,7 +25,7 @@ public class MySelfMapper implements RowMapper<MySelf> {
 		mySelf.setSchool(rs.getString("school"));
 		mySelf.setSkillid(rs.getInt("skillid"));
 		mySelf.setUserName(rs.getString("username"));
-		
+		mySelf.setEmail(rs.getString("email"));
 		return mySelf;
 	}
 

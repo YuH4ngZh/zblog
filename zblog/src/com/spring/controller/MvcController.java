@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.model.MySelf;
-import com.spring.server.MySelfServer;
+import com.spring.server.MySelfService;
 
 
 @Controller
 @RequestMapping("/mvc")
 public class MvcController {
  
-	MySelfServer mySelfServer = new MySelfServer();
+	MySelfService mySelfServer = new MySelfService();
 	
     @RequestMapping("/hello")
     public ModelAndView hello(){ 

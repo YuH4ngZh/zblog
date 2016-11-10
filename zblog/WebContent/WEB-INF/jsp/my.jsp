@@ -28,14 +28,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="col-md-3 b-part1">
 			<img src="images/1.jpg" alt=" " />
-			<h1>${mySelf.UserName}</h1>
-			<h2>Java Designer</h2>
+			 <h1>${mySelf.userName }</h1>
+			 <h2>${mySelf.course }</h2>
 		</div>
 		<div class="col-md-3 b-part2">
 			<h3>Contact</h3>
-			<h4><a href="mailto:info@example.com">exam@gmail.com</a></h4>
-			<h4 class="agile">+18044261158</h4>
-			<h4>Richmond,USA</h4>
+			<h4><a href="mailto:info@example.com">${mySelf.email }</a></h4>
+			<h4 class="agile"></h4>
+			<h4>${mySelf.address }</h4>
 		</div>
 		<div class="col-md-3 b-part3">
 			<h3>Follow</h3>
@@ -63,8 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h3>About Me</h3>
 		<label class="line"></label>
 		<img src="images/1.jpg" alt=" " />
-		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-		<p>As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum.</p>
+		<p>${mySelf.aboutme }</p>
 	</div>
 </div>
 <!--//about-->

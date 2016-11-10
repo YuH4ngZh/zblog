@@ -4,5 +4,7 @@ import com.spring.model.MySelf;
 
 public interface MySelfDao {
 
-	public MySelf selectMyself();
+	public static MySelf selectMyself() {
+		return null;
+	}
 }

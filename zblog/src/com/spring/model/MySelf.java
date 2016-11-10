@@ -6,7 +6,7 @@ public class MySelf {
 
 	private int myid;
 	
-	private String UserName;
+	private String userName;
 	
 	private int age;
 	
@@ -24,6 +24,8 @@ public class MySelf {
 	
 	private String aboutme;
 	
+	private String email;
+	
 	private int skillid;
 	
 	private int projectid;
@@ -39,11 +41,20 @@ public class MySelf {
 	}
 
 	public String getUserName() {
-		return UserName;
+		return userName;
 	}
 
 	public void setUserName(String userName) {
-		UserName = userName;
+		this.userName = userName;
+	}
+	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public int getAge() {
@@ -136,7 +147,7 @@ public class MySelf {
 
 	@Override
 	public String toString() {
-		return "MySelf [myid=" + myid + ", UserName=" + UserName + ", age=" + age + ", birth=" + birth
+		return "MySelf [myid=" + myid + ", UserName=" + userName + ", age=" + age + ", birth=" + birth
 				+ ", businessphone=" + businessphone + ", lifephone=" + lifephone + ", address=" + address + ", school="
 				+ school + ", course=" + course + ", aboutme=" + aboutme + ", skillid=" + skillid + ", projectid="
 				+ projectid + ", portfolioid=" + portfolioid + "]";

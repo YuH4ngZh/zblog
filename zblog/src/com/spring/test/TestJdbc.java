@@ -1,16 +1,20 @@
 package com.spring.test;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.spring.daoimp.MySelfDaoImp;
-import com.spring.server.MySelfServer;
+import com.spring.server.MySelfService;
 
 public class TestJdbc {
+	@Autowired
+	private static MySelfService mySelfServer ;
 	
 	public static void main(String args[]) {
-		test3();
+
+		System.out.println(mySelfServer.getMySelf());
 	}
 	
 	public static void test1() {
@@ -27,8 +31,7 @@ public class TestJdbc {
 	}
 	
 	public static void test3() {
-		MySelfServer mySelfServer =new MySelfServer();
-		System.out.println(mySelfServer.getMySelf());
+
 	}
 	
 }

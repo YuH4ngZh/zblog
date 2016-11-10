@@ -13,16 +13,15 @@ import com.spring.test.StudentMapper;
 
 public class MySelfDaoImp implements MySelfDao {
 
-	private DataSource datasource;
-	private JdbcTemplate jdbcTemplateObject;
+	private static DataSource datasource;
+	private static JdbcTemplate jdbcTemplateObject;
 			
     public void setDatasource(DataSource ds) {  
         this.datasource = ds;  
         this.jdbcTemplateObject = new JdbcTemplate(datasource);       
     }  
     
-	@Override
-	public MySelf selectMyself() {
+	public static MySelf selectMyself() {
 		List<MySelf> list= null;
 		String sql = "select * from my_self";
 		list = jdbcTemplateObject.query(sql, new MySelfMapper()); 
